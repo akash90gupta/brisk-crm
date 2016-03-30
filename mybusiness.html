@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointer</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+        <!-- Bootstrap -->
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <div class="overall-container">
+
+        <!-- begin COMPANY header-->
+        <div class="container-fluid merchant-bar">
+            <div class="navbar-header">
+                <a class="navbar-brand span8" href="#">
+                    <img alt="myOmniservice Logo" class="myOmniservice" src="">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Merchant/Company" class="companyLogoImg" src="">
+                </a>
+                <div class="top-right-header-section pull-right">1-888-123-1234<br>
+                    <a class="chat-link" href="#">&#8226; Chat with us </a>
+                    <div id="clock"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end  COMPANY header-->
+
+        <!-- begin NAV BAR -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li><a href="index.html">MY APPOINTER</a></li>
+                    <li class="active"><a href="mybusiness.html">MY BUSINESS</a></li>
+                    <li><a href="clients.html">MY CLIENTS</a></li>
+                </ul>
+                <!-- <div class="pull-right log-in-area"><a href="#"> Akash Gupta</a></div> -->
+                <div class="dropdown pull-right">
+                    <a class="dropdown-toggle log-in-area " id="menu1" data-toggle="dropdown">Akash Gupta<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Profile</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Favorites</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end NAV BAR -->
+
+        <div class="clearfix">
+            <!-- begin LEFT SLIDE BAR -->
+            <div id="left-panel-bar">
+                <div id="datepicker" class="calendar"></div>
+                <div class="search-container">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div> <!-- input-group -->
+            </div>
+            <!-- end LEFT SLIDE BAR -->
+
+        <div class="mybusiness-container">
+            <div class="tabbable boxed parentTabs"> 
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#set1">Dashboard</a></li>
+                    <li><a href="#set2">Business Profile</a></li>
+                    <li><a href="#set3">Services</a></li>
+                    <li><a href="#set4">Reports</a></li>
+                    <li><a href="#set5">People &#38; Availability</a></li>
+                    <li><a href="#set6">Settings</a></li>
+                </ul>
+            </div>
+
+            <!-- OPEN TABS CONTENT --> 
+            <div class="tab-content">
+                <!--BEGIN DASHBOARD CONTENT -->
+                <div class="tab-pane fade active in" id="set1">
+                    <div class="tabbable">
+                        <h2>Merchant Name</h2>
+                            <span class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                All Staff
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Name 1</a></li>
+                                    <li><a href="#">Name 2</a></li>
+                                    <li><a href="#">Name 3</a></li>
+                                    <li><a href="#">Name 4</a></li>
+                                </ul>
+                            </span>
+                            <span class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Time
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Last 7 days</a></li>
+                                    <li><a href="#">Last 14 days</a></li>
+                                    <li><a href="#">Last 30 days</a></li>
+                                    <li><a href="#">Last 60 days</a></li>
+                                </ul>
+                            </span>
+                            <span class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Location
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Location 1</a></li>
+                                    <li><a href="#">Location 2</a></li>
+                                    <li><a href="#">Location 3</a></li>
+                                    <li><a href="#">Location 4</a></li>
+                                </ul>
+                            </span>
+                            <button class="btn btn-primary btn-lg" type="button">PREVIEW</button>
+                        <div class="dashboard-container">
+                            <div class="dashboard-left-container">
+                                <p> <strong> SERVICES AND REVENUE </strong> </p>
+                                <p> <a href="#"> by Service </a> </p>
+                                <p> <a href="#"> by Staff Member </a> </p>
+                                <p> <a href="#"> by Location </a> </p>
+                                <p> <a href="#"> by Client </a> </p>
+                                <p> <a href="#"> by Day of the Week </a> </p>
+                                <p> <a href="#"> by Time of Day </a> </p>
+                                <p> <a href="#"> Cancellations </a> </p>
+                            </div>
+                            <div class="dashboard-middle-container">
+                                <p> <strong> CLIENTS </strong> </p>
+                                <p> <a href="#"> Booked Clients </a> </p>
+                                <p> <a href="#"> New Clients Booking </a> </p>
+                                <p> <a href="#"> New VS Existing</a> </p>
+                                <p> <a href="#"> Lapsed Clients </a> </p>
+                                <p> <a href="#"> Top Referrers </a> </p>
+                                <p> <a href="#"> Average Ratings </a> </p>
+                            </div>
+                            <div class="dashboard-right-container">
+                                <p> <strong> STAFF </strong> </p>
+                                <p> <a href="#"> Booking Agenda </a> </p>
+                                <p> <a href="#"> Calendar Utilization </a> </p>
+                                <p> <a href="#"> Client Retention </a> </p>
+                                <p> <a href="#"> Offered Services </a> </p>
+                                <p> <a href="#"> Average Ratings </a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END DASHBOARD CONTENT -->
+
+                <!--BEGIN BUSINESS PROFILE CONTENT -->
+                <div class="tab-pane fade" id="set2">
+                    <div class="tabbable">
+                        <div class="mybusiness-profile-container">
+                          <h3>Business Name</h3>
+                          <div class="contact-information">
+                            
+                          </div>
+                          <div class="row-fluid">
+                            <div class="span12">
+                              <div class="mybusinessHeader">
+                              </div>
+                              <div class="carousel slide" id="myCarousel">
+                                <div class="carousel-inner">
+                                  <div class="item active">
+                                    <ul class="thumbnails">
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <!-- /Slide1 -->
+                                  <div class="item">
+                                    <ul class="thumbnails">
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <!-- /Slide2 -->
+                                  <div class="item">
+                                    <ul class="thumbnails">
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+                                      </li>
+                                      <li class="span3">
+                                        <div class="thumbnail">
+                                          <a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+                                        </div>
+
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <!-- /Slide3 -->
+                                </div>
+                                <input type="file" multiple=true class="file-loading pull-left">
+                                <div class="control-box">
+                                  <a data-slide="prev" href="#myCarousel" class="carousel-control left"> &#60;</a>
+                                  <a data-slide="next" href="#myCarousel" class="carousel-control right"> &#62;</a>
+                                </div>
+                                <!-- /.control-box -->
+                              </div>
+                              <!-- /#myCarousel -->
+                            </div>
+                            <!-- /.span12 -->
+                          </div>
+                          <!-- /.row -->
+                          <div class="online-presence-container">
+                            <h3> Online Presence</h3>
+                            <label>Website:</label><input type="text" class="form-control" placeholder="Website">
+                            <label> Select a MyOmniservice URL: </label><input type="text" class="form-control" placeholder=" user123@myomniservice.com">
+                            <label>Facebook: </label><input type="text" class="form-control" placeholder="Facebook">
+                            <label>Twitter:</label> <input type="text" class="form-control" placeholder="Twitter">
+                            <label>Google Plus: </label><input type="text" class="form-control" placeholder="Google Plus">
+                            <label>LinkedIn: </label> <input type="text" class="form-control" placeholder="LinkedIn"> 
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END BUSINESS PROFILE CONTENT -->
+
+                <!-- BEGIN SERVICE CONTENT --> 
+                <div class="tab-pane fade" id="set3">
+                    <div class="tabbable">
+                        <h3> Services Content </h3>
+                    </div>
+                </div>
+                <!-- END SERVICE CONTENT --> 
+
+                <!-- BEGIN REPORTS CONTENT --> 
+                <div class="tab-pane fade" id="set4">
+                    <div class="tabbable">
+                        <h1> Reports Content </h1>
+                         <section id="d3-donut-chart">
+                            <article id="device-chart--donut">
+                                <h3>No. of appointment booked per day</h3>
+                            </article>
+                         </section>
+                    </div>
+                </div>
+                <!-- END REPORTS CONTENT --> 
+
+                <!-- BEGIN PEOPLE AND AVAILABILITY CONTENT --> 
+                <div class="tab-pane fade" id="set5">
+                    <div class="tabbable">
+                        <h3>Merchant Name: People and Availability</h3>
+                            <span class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                All Staff
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </span>
+                            <span class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Location
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Location 1</a></li>
+                                    <li><a href="#">Location 2</a></li>
+                                    <li><a href="#">Location 3</a></li>
+                                    <li><a href="#">Location 4</a></li>
+                                </ul>
+                            </span>
+                            <button class="new-person-tile">ADDING PERSON</button>
+                            <button class="btn btn-success btn-lg pull-right action-button" type="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span>Add Employee
+                            </button>
+                        <div class="people-container">
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Employee Information</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="upper-container">
+                                                    <div class="pull-left">
+                                                        <img alt="Person Image" class="modal-person-image" src="img/person-image.jpg">
+                                                    </div>
+                                                    <span> 
+                                                        First Name:
+                                                        <input type="text" class="form-control margin-left20" placeholder="First Name">
+                                                    </span>
+                                                    <span>
+                                                        Last Name:
+                                                        <input type="text" class="form-control margin-left20" placeholder="Last Name">
+                                                    </span>
+                                                    <span> 
+                                                        Phone No.:
+                                                        <input type="text" class="form-control margin-left20" placeholder="+91-9820111788">
+                                                    </span>
+                                                    <span> 
+                                                        Role:
+                                                        <select class="form-control margin-left55">
+                                                            <option>Owner</option>
+                                                            <option>Stylist</option>
+                                                            <option>Haircut Expert</option>
+                                                            <option>Female Mani/Pedi</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                    <!--Open All Accordions container -->
+                                                    <div class="accordion" id="accordion2">
+                                                      <div class="accordion-group">
+                                                        <div class="accordion-heading">
+                                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                                            Services offered by Akash Gupta
+                                                          </a>
+                                                        </div>
+                                                        <div id="collapseOne" class="accordion-body collapse">
+                                                          <div class="accordion-inner">
+                                                             <ul>
+                                                                <li><input type="checkbox" checked disabled>Haircut</li>
+                                                                <li><input type="checkbox" checked disabled>Massage</li>
+                                                                <li><input type="checkbox">Shave</li>
+                                                                <li><input type="checkbox">Hair Color</li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="accordion-group">
+                                                        <div class="accordion-heading">
+                                                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                                            When is this staff member available?
+                                                          </a>
+                                                        </div>
+                                                        <div id="collapseTwo" class="accordion-body collapse">
+                                                          <div class="accordion-inner">
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Monday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div>
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Tuesday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div> 
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Wednesday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div> 
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Thursday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div> 
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Friday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div> 
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Saturday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div> 
+                                                            <div class="day-container">
+                                                                <span class="day-name"><input type="checkbox">Sunday</span>
+                                                                <span>To: 
+                                                                <select>
+                                                                    <option></option>
+                                                                </select>
+                                                                </span>
+                                                                <span>From: <select></select></span>
+                                                                <span>Location: <select></select></span>
+                                                            </div> 
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <!-- Close All Accordions container-->
+                                                    <div class="questions-for-admin">Can Customers book specifically for this staff member?
+                                                        <input name="booking-staff" type="radio">Yes
+                                                        <input name="booking-staff" type="radio">No
+                                                    </div>
+                                                    <div class="questions-for-admin">Do prices vary for this staff member?
+                                                        <input name="price-variation" type="radio">Yes
+                                                        <input name="price-variation" type="radio">No
+                                                    </div>
+                                                    <div class="questions-for-admin">Level of Access: 
+                                                    <input type="checkbox" checked>Admin
+                                                    <input type="checkbox" checked disabled>Authorized User
+                                                    </div>
+                                                </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-danger btn-lg" type="button">Delete</button>
+                                                 <button class="btn btn-success btn-lg" data-dismiss="modal" type="button">Save Changes
+                                                 </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Modal on page --> 
+                            <div class="person-tile" data-toggle="modal" data-target="#myModal">
+                                <div class="edit-person-link"> <a href="#">Edit</a></div>
+                                <div class="pull-left">
+                                    <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                                </div>
+                                <div class="person-thumbnail-info pull-left">
+                                    <p><strong> Akash Gupta</strong></p>
+                                    <p>Admin</p>
+                                    <p class="active-green">Active</p>
+                                </div>
+                            </div>
+                            <div class="person-tile" data-toggle="modal" data-target="#myModal">
+                                <div class="edit-person-link"> <a href="#">Edit</a></div>
+                                <div class="pull-left">
+                                    <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                                </div>
+                                <div class="person-thumbnail-info pull-left">
+                                    <p><strong> Anmol Arora</strong></p>
+                                    <p>Admin</p>
+                                    <p class="active-green">Active</p>
+                                </div>
+                            </div>
+                            <div class="person-tile">
+                                <div class="edit-person-link"> <a href="#">Edit</a></div>
+                                <div class="pull-left">
+                                    <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                                </div>
+                                <div class="person-thumbnail-info pull-left">
+                                    <p><strong> Akash Gupta</strong></p>
+                                    <p>Admin</p>
+                                    <p class="active-green">Active</p>
+                                </div>
+                            </div>
+                            <div class="person-tile">
+                                <div class="edit-person-link"> <a href="#">Edit</a></div>
+                                <div class="pull-left">
+                                    <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                                </div>
+                                <div class="person-thumbnail-info pull-left">
+                                    <p><strong> Akash Gupta</strong></p>
+                                    <p>Admin</p>
+                                    <p class="active-green">Active</p>
+                                </div>
+                            </div>
+                            <div class="person-tile">
+                                <div class="edit-person-link"> <a href="#">Edit</a></div>
+                                <div class="pull-left">
+                                    <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                                </div>
+                                <div class="person-thumbnail-info pull-left">
+                                    <p><strong> Akash Gupta</strong></p>
+                                    <p>Admin</p>
+                                    <p class="active-green">Active</p>
+                                </div>
+                            </div>
+                            <div class="person-tile">
+                                <div class="edit-person-link"> <a href="#">Edit</a></div>
+                                <div class="pull-left">
+                                    <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                                </div>
+                                <div class="person-thumbnail-info pull-left">
+                                    <p><strong> Akash Gupta</strong></p>
+                                    <p>Admin</p>
+                                    <p class="active-green">Active</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PEOPLE AND AVAILABILITY CONTENT --> 
+
+                    <!-- BEGIN SETTINGS CONTENT --> 
+                    <div class="tab-pane fade settings-container" id="set6">
+                        <div class="tabbable sub-tabs">
+                            <span class="account-tab">
+                                <a href="#">Account</a>
+                            </span>
+                            <span class="administrative-tab">
+                                <a href="#">Administrative</a>
+                                <div id="vertical_tab_nav">
+                                    <ul>
+                                        <li><a href="#">User Roles</a></li>
+                                        <li><a href="#">Sync Calendar</a></li>
+                                        <li><a href="#">Email Settings</a></li>
+                                        <li><a href="#">Message Settings</a></li>
+                                        <li><a href="#">Payment Settings</a></li>
+                                    </ul>
+                                    <div>
+                                        <article>
+                                          <h2>User Roles</h2>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreofficia deserunt mollit anim id est laborum.</p>
+                                        </article>
+                                        <article>
+                                            <h2>Sync Calendar with the following: </h2>
+                                                <div class="">
+                                                    <button class="btn btn-primary btn-lg" type="button">GOOGLE CALENDAR</button>
+                                                    <button class="btn btn-primary btn-lg" type="button">APPLE iCAL</button>
+                                                    <button class="btn btn-primary btn-lg" type="button">OUTLOOK</button>
+                                        </article>
+                                        <article>
+                                            <h2>Email Settings</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </article>
+                                        <article>
+                                            <h2>Message Settings</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </article>
+                                        <article>
+                                            <h2>Payment Settings</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END SETTINGS CONTENT --> 
+            </div>
+            <!-- CLOSE TABS CONTENT --> 
+        </div>
+    </div>
+        <!-- begin  footer BAR -->
+<!--         <footer class="footer">
+        </footer> -->
+        <!-- end  footer BAR -->
+    </div>
+        <script src="js/d3.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/d3graphs.js"></script>
+    </body>
+</html>

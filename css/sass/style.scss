@@ -1,0 +1,680 @@
+//Colors
+$aquelight-blue: #00a8b2;
+$green: #008000;
+$light-grey: #fafafa;
+$medium-grey: #d4d4d4;
+
+//Fonts
+$font-family: Garamond;
+$min-width: 1300px;
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+  font-family: $font-family;
+}
+
+a {
+  color: $aquelight-blue;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease; 
+}
+
+a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.overall-container{
+  min-width: $min-width;
+}
+
+.merchant-bar{
+  padding: 5px 20px;
+}
+
+.top-right-header-section{
+  font-size: 18px;
+}
+.chat-link{
+  color: $green;
+}
+
+.companyLogoImg{
+  width: 125px;
+  height: 50px;
+}
+
+.myOmniservice{
+  width: 250px;
+  height: 50px;
+}
+
+#left-panel-bar {
+  //display: inline-block;
+  width: 300px;
+  height: 1000px;
+  background: $light-grey;
+  border: 1px solid $medium-grey;
+  border-top: none;
+  border-bottom: none;
+  float: left;
+}
+
+.log-in-area{
+  color: $aquelight-blue;
+  padding: 10px 20px 10px;
+  display: block;
+  font-size: 16px;
+}
+
+.log-in-area:hover{
+  cursor: pointer;
+  color: $aquelight-blue;
+  text-decoration: none;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid $medium-grey;
+    background-color: $light-grey;
+}
+
+.action-button{
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* BEGIN CSS CALENDAR CSS*/
+.calendar {
+  width: 300px;
+  background: #fff;
+  border-bottom: 1px solid $medium-grey;
+  margin-bottom: 25px;
+}
+.ui-datepicker-header {
+  line-height: 50px;
+  background: #f2f2f2;
+  margin-bottom: 10px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border: 2px solid #b0aead;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-left: 2px solid #b0aead;
+  border-bottom: 2px solid #b0aead;
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #5ed1cc;
+}
+.ui-datepicker-title {
+  text-align: center;
+}
+.ui-datepicker-title span {
+  color: $aquelight-blue ;
+}
+
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: $aquelight-blue;
+}
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  line-height: 40px;
+}
+.ui-state-default:hover {
+  background: #f2f2f2;
+}
+.ui-state-highlight {
+  color: #8dd391;
+  font-weight: bold;
+}
+.ui-state-active {
+  color: $aquelight-blue;
+  font-weight: bold;
+  border-radius: 30px;
+  background: #cccccc;
+
+}
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+
+/* END CSS CALENDAR CSS*/
+
+.search-container{
+  display: flex;
+  margin-left: 16px;
+}
+.mybusiness-container, .appointer-container, .clients-container{
+    margin-left: 20px;
+    float: left;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+/* CLIENT DATABASE TABLE*/
+.client-controls{
+  padding: 10px 5px;
+  width: 900px;
+  margin-bottom: 15px;
+}
+
+.responstable {
+  width: 100%;
+  background: #FFF;
+  overflow: auto;
+}
+
+.responstable table {
+  width: 900px;
+}
+
+.responstable tr {
+  border-top: 1px solid #167F92;
+  border-bottom: 1px solid #167F92;
+}
+
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+}
+
+.responstable td {
+  display: block;
+}
+
+.responstable td:first-child {
+  padding-top: 12px;
+}
+
+.responstable td:last-child {
+  padding-bottom: 12px;
+}
+
+/*.responstable td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 8em;
+  display: inline-block;
+}*/
+
+.responstable td:before {
+    display: none;
+  }
+
+
+.responstable td {
+    border: 1px solid #D9E4E6;
+}
+
+.responstable th, .responstable td {
+  text-align: left;
+}
+
+
+.responstable th, .responstable td {
+    display: table-cell;
+    padding: 12px;
+  }
+
+.responstable th:first-child, .responstable td:first-child {
+    text-align: left;
+  }
+
+.people-container{
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.person-tile{
+  width: 250px;
+  height: 125px;
+  background: $light-grey;
+  border: 1px solid $medium-grey;
+  float: left;
+  margin: 0px 20px 20px 0px;
+  border-radius: 5px;
+    .person-image{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 5px 20px;
+  }
+}
+
+.modal-body{
+  .person-image{
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  padding: 5px 20px;
+  }
+}
+.person-tile:hover{
+  cursor: pointer;
+  background: #e5e5e5;
+}
+
+.person-image{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 5px 20px;
+}
+.person-thumbnail-info{
+}
+
+.edit-person-link{
+  padding-right: 8px;
+  text-align: right;
+}
+
+//States
+.active-green{
+  color: $green;
+}
+
+//Carousel
+/* Global */
+
+// img { max-width:100%; }
+
+// a {
+//   -webkit-transition: all 150ms ease;
+//   -moz-transition: all 150ms ease;
+//   -ms-transition: all 150ms ease;
+//   -o-transition: all 150ms ease;
+//   transition: all 150ms ease; 
+//   }
+//     a:hover {
+//         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+//         filter: alpha(opacity=50); /* IE7 */
+//         text-decoration: none;
+//     }
+
+/* My business Page Header */
+.mybusinessHeader {
+    background: #f4f4f4;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+/* Carousel Control */
+.control-box {
+    text-align: right;
+    width: 100%;
+}
+
+.carousel-control{
+    background: #666;
+    border-radius: 0px;
+    font-size: 24px;
+    line-height: 18px;
+    opacity: 0.5;
+    padding: 2px 6px 0px;
+    position: static;
+}
+
+/* ADD-ON TO BOOTSTRAP
+-------------------------------------------------- */
+.nav-tabs{
+  font-size: 16px;
+}
+
+.modal-person-image{
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    padding: 5px 20px;
+}
+
+.modal-buttons-container{
+  line-height:4;
+  margin-left: 40px;
+}
+
+.carousel {
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.online-presence-container{
+  padding: 10px;
+  background: #f4f4f4;
+  overflow: auto;
+  input{
+    width: 500px;
+  }
+}
+
+.margin-left20{
+  margin-left: 20px;
+}
+
+.margin-left55{
+  margin-left: 55px;
+}
+
+.upper-container{
+  overflow: auto;
+}
+
+.questions-for-admin{
+padding: 5px 0px;
+}
+
+.day-container{
+  .day-name{
+    min-width: 140px;
+    display: inline-block;
+  }
+  select{
+    width: 75px;
+  }
+}
+
+//SETTINGS TAB
+.settings-container{
+  background: $light-grey;
+}
+
+#vertical_tab_nav li:first-child{
+  border-top: 1px solid $medium-grey;
+}
+
+/* vertical tab nav */
+#vertical_tab_nav{
+  display: block;
+  width: 100%;
+}
+
+#vertical_tab_nav ul{
+  display: block;
+  float: left;
+  list-style: none;
+  overflow: hidden;
+  width: 25%;
+  padding: 20px 10px;
+}
+#vertical_tab_nav li{
+  border-bottom: 1px solid $medium-grey;
+  text-align: left;
+}
+
+#vertical_tab_nav li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background: #e5e5e5;
+  color: #555;
+}
+#vertical_tab_nav li a.selected{
+  background: #fff;
+}
+#vertical_tab_nav div{
+  display: block;
+  float: left;
+  width: 65%;
+  min-height: 1000px;
+  padding: 0px 20px;
+}
+#vertical_tab_nav div article{
+  display: none;
+}
+
+//DASHBOARD TAB CONTAINER
+.dashboard-container{
+  position: relative;
+  display: flex;
+  padding: 20px 0px;
+  height: 400px;
+  .dashboard-left-container{
+    background: $light-grey;
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #d4d4d4;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .dashboard-middle-container{
+    background: $light-grey;
+    padding: 20px;
+    width: 250px;
+    border: 1px solid #d4d4d4;
+    margin-right: 20px;
+    font-size: 16px;
+
+  }
+  .dashboard-right-container{
+    width: 250px;
+    background: $light-grey;
+    padding: 20px;
+    border: 1px solid #d4d4d4;
+    font-size: 16px;
+  }
+}
+
+
+//Appinter TAB CSS
+.makeAppointmentModal{
+  min-height: 500px;
+}
+
+.margin10topbottom{
+  margin: 10px 0px;
+}
+
+#datepairExample{
+  display: inline-block;
+}
+
+
+#datepairExample > div{
+  display: inline-block;
+}
+
+.date-start-container{
+  margin: 10px 0px;
+}
+
+.datechooser{
+  width: 265px;
+}
+
+.timechooser{
+  width: 100px;
+}
+
+ /* Popover Header */
+  .popover-title {
+      font-size: 16px;
+      text-align: left;
+  }
+  /* Popover Body */
+  .popover-content {
+      padding: 25px 0px 25px 15px;
+      width: 200px;
+  }
+
+.appointer-container {
+  width: inherit;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      width: 150px;
+      border-right: 1px solid $medium-grey;
+      text-align: center;
+
+      &.timer {
+        width: 50px;
+        li {
+          width: 50px;
+        }
+      }
+
+      > ul {
+
+        li {
+          height: 30px;
+          border-bottom: 1px solid $medium-grey;
+          //border-bottom: 1px solid $medium-grey;
+          &:hover{
+            background: $medium-grey;
+          }
+          div.booked {
+            background: $light-grey;
+            height: 30px;
+            padding-left: 5px;
+            border-left: 8px solid $green;
+            text-align: left;
+          }&:hover{
+            cursor: pointer;
+          }
+          div.pending{
+            background: $light-grey;
+            height: 30px;
+            padding-left: 5px;
+            border-left: 8px solid orange;
+            text-align: left;
+          }&:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//D3.JS CSS BEGINS
+rect {
+  stroke-width: 2;
+  cursor: pointer;
+}
+
+rect.disabled {
+  fill: transparent !important;
+}
+
+#browser-chart--bars,
+#device-chart--donut {
+  position: relative;
+  display: flex;
+  border: 1px solid $medium-grey;
+  background: $light-grey;
+  padding: 15px;
+}
+
+.tooltip--bars {
+  z-index: 100;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 30%;
+  text-align: center;
+  padding: .7em;
+  background-color: white;
+  box-shadow       : 0 0 5px hsla(0, 0%, 20%, 0.9);
+  color: hsl(0, 0%, 20%);
+  min-width: 45%;
+  max-width: 95%;
+  box-sizing: border-box;
+}
+
+.tooltip--bars .value {
+  font-weight: bold;
+}
+
+.donut_tooltip {
+  display    : none;
+  position   : absolute;
+  width      : 150px;
+  text-align : center;
+  color      : #333;
+  font-size  : 16px;
+  padding    : 10px;
+  z-index    : 10;
+  background-color : #eee;
+  box-shadow       : 0 0 5px #999999;
+}
+
+.donut_tooltip{
+  .label{
+    font-weight: normal;
+    color: #000;
+    background: none;
+    padding: none;
+    font-size: 16px;
+    text-shadow: none;
+  }
+  .count{
+    font-weight: bold;
+  }
+  .percent{
+
+  }
+}
+

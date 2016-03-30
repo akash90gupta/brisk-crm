@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="overall-container">
+        <!-- begin COMPANY header-->
+        <div class="container-fluid merchant-bar">
+            <div class="navbar-header">
+                <a class="navbar-brand span8" href="#">
+                    <img alt="myOmniservice Logo" class="myOmniservice" src="">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Merchant/Company" class="companyLogoImg" src="">
+                </a>
+                <div class="top-right-header-section pull-right">1-888-123-1234<br>
+                    <a class="chat-link" href="#">&#8226; Chat with us </a>
+                    <div id="clock"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end  COMPANY header-->
+
+        <!-- begin NAV BAR -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav">
+                    <li><a href="index.html">MY APPOINTER</a></li>
+                    <li><a href='mybusiness.html'>MY BUSINESS</a></li>
+                    <li class="active"><a href="clients.html">MY CLIENTS</a></li>
+                </ul>
+                <!-- <div class="pull-right log-in-area"><a href="#"> Akash Gupta</a></div> -->
+                <div class="dropdown pull-right">
+                    <a class="dropdown-toggle log-in-area " id="menu1" data-toggle="dropdown">Akash Gupta<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">My Profile</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Favorites</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end NAV BAR -->
+
+    <div class="clearfix">
+            <!-- begin LEFT SLIDE BAR -->
+            <div id="left-panel-bar">
+                <div id="datepicker" class="calendar"></div>
+                <div class="search-container">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+            <!-- end LEFT SLIDE BAR -->
+
+        <!--begin CLIENTS CONTENT --> 
+        <div class="clients-container">
+                <div class="client-controls">
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Location
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Location 1</a></li>
+                            <li><a href="#">Location 2</a></li>
+                            <li><a href="#">Location 3</a></li>
+                            <li><a href="#">Location 4</a></li>
+                        </ul>
+                    </span>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Sort by
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Location 1</a></li>
+                            <li><a href="#">Location 2</a></li>
+                            <li><a href="#">Location 3</a></li>
+                            <li><a href="#">Location 4</a></li>
+                        </ul>
+                    </span>
+                    <span class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Manage Clients
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Location 1</a></li>
+                            <li><a href="#">Location 2</a></li>
+                            <li><a href="#">Location 3</a></li>
+                            <li><a href="#">Location 4</a></li>
+                        </ul>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search Client...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                    <button class="btn btn-success btn-lg pull-right action-button" data-target="#clientModal" data-toggle="modal" type="button"><span class="glyphicon glyphicon-plus"></span> Add Client</button>
+                </div>
+                <div class="responstable">
+                    <table>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Next Appt.</th>
+                            <th>Last Appt.</th>
+                            <th>Total Bookings</th>
+                            <th>Total Revenue</th>
+                            <th>Frequency</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a class="trigger" data-toggle="modal" data-target="#myModal" href="#">Anmol Arora</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Susana Catalina Alvarez</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Arjune Gunaeskaran</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Francisco Becker</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Dimos Anagnostopoulos</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Joshua Patterson</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Mayank Sirsalewala</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Elon Musk</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Julius Caesar</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Donald Trump</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Adarsh Gupta</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Priyanka Chopra</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Cristiano Ronaldo</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Jose Mourinho</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Roger Federer</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Rafael Nadal</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Teddy Roosevelt</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Varun Deshpande</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"><a data-toggle="modal" data-target="#myModal" href="#">Steve Jobs</a></td>
+                            <td>11/15/2015</td>
+                            <td>10/15/2015</td>
+                            <td>8</td>
+                            <td>150$</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--end CLIENTS CONTENT --> 
+
+        <!-- Edit Existing Customer Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4>First, Last Name</h4>
+                </div>
+                    <div class="modal-body">
+                    <div class="pull-left">
+                        <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                    </div>
+                    <div class="pull-left modal-buttons-container">
+                        <div> <button type="button" class="btn btn-success">Book Next Appointment</button></div>
+                        <div> <button type="button" class="btn btn-primary">Contact Client</button></div>
+                        <div> <button type="button" class="btn btn-default">View Details</button></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div> <button type="button" data-dismiss="modal" class="btn btn-success">Save</button></div>
+                </div>
+        </div>
+        <!-- End Existing Customer Modal --> 
+
+            <!-- Begin Add Client Modal--> 
+            <div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4>New Client</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="pull-left">
+                        <img alt="Person Image" class="person-image" src="img/person-image.jpg">
+                    </div>
+                    <div class="pull-left modal-buttons-container">
+                        <div> 
+                            First Name:
+                            <input type="text" class="form-control margin-left20" placeholder="First Name">
+                        </div>
+                        <div>
+                            Last Name:
+                            <input type="text" class="form-control margin-left20" placeholder="Last Name">
+                        </div>
+                        <div> 
+                            Phone No.:
+                            <input type="text" class="form-control margin-left20" placeholder="+91-12345-12345">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div> <button type="button" data-dismiss="modal" class="btn btn-success">Save</button></div>
+                </div>
+            </div>
+            <!-- End Add Client Modal --> 
+    </div>
+        <!-- begin  footer BAR -->
+<!--    <footer class="footer">
+        </footer> -->
+
+        <!-- end  footer BAR -->
+</div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
